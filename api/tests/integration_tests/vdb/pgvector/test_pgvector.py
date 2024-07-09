@@ -16,7 +16,7 @@ class PGVectorTest(AbstractVectorTest):
                 host="localhost",
                 port=5433,
                 user="postgres",
-                password="difyai123456",
+                password="siasaigc_ai!",
                 database="dify",
             ),
         )

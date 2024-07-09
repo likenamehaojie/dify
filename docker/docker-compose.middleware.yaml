@@ -6,7 +6,7 @@ services:
     env_file:
       - ./middleware.env
     environment:
-      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-difyai123456}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-siasaigc_ai!}
       POSTGRES_DB: ${POSTGRES_DB:-dify}
       PGDATA: ${PGDATA:-/var/lib/postgresql/data/pgdata}
     volumes:
@@ -22,7 +22,7 @@ services:
       # Mount the redis data directory to the container.
       - ./volumes/redis/data:/data
     # Set the redis password when startup redis server.
-    command: redis-server --requirepass difyai123456
+    command: redis-server --requirepass siasaigc_ai!
     ports:
       - "${EXPOSE_REDIS_PORT:-6379}:6379"
 
