@@ -223,7 +223,8 @@ services:
       interval: 1s
       timeout: 3s
       retries: 30
-
+    ports:
+      - 5432:5432
   # The redis cache.
   redis:
     image: redis:6-alpine
@@ -235,6 +236,8 @@ services:
     command: redis-server --requirepass ${REDIS_PASSWORD:-siasaigc_ai!}
     healthcheck:
       test: [ "CMD", "redis-cli", "ping" ]
+    ports:
+      - 6379:6379
 
   # The DifySandbox
   sandbox:
