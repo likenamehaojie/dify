@@ -71,6 +71,7 @@ x-shared-env: &shared-api-worker-env
   DB_HOST: ${DB_HOST}
   DB_PORT: ${DB_PORT}
   DB_DATABASE: ${DB_DATABASE}
+  POSTGRES_DB: ${DB_DATABASE}
   # The size of the database connection pool.
   # The default is 30 connections, which can be appropriately increased.
   SQLALCHEMY_POOL_SIZE: ${SQLALCHEMY_POOL_SIZE}
